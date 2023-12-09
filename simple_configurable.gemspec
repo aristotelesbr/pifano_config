@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.version = SimpleConfigurable::VERSION
   spec.authors = ['Aristóteles Coutinho']
   spec.email = ['aristotelesbr@gmail.com']
+  spec.license = 'MIT'
 
   spec.summary = 'Create a simple configuration for your project by enviroment.'
   spec.description = 'Create a simple configuration for your project by enviroment.'
