@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'configurable/option_builder'
+require 'pifano/option_builder'
 
-module Configurable
+module Pifano
   class Config
     def initialize(builder: OptionBuilder.new)
       @builder = builder

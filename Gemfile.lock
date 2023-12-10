@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    simple_configurable (0.1.0)
+    pifano_config (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -14,8 +14,8 @@ PLATFORMS
 
 DEPENDENCIES
   minitest (~> 5.0)
+  pifano_config!
   rake (~> 13.0)
-  simple_configurable!
 
 BUNDLED WITH
    2.4.22

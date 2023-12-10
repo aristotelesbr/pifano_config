@@ -2,7 +2,7 @@
 
 require 'thread'
 
-module Configurable
+module Pifano
   module OptionFactory
     @struct_cache = {}
     @mutex = ::Mutex.new

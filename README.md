@@ -1,14 +1,12 @@
-# SimpleConfigurable
+# PifanoConfig
 
 This is a simple configurable gem that allows you to easily create a configuration file for your gem or application.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Add this line to your application's `Gemfile`:
 
-```ruby
-gem 'simple_configurable'
-```
+    gem 'pifano_config'
 
 And then execute:
 
@@ -16,23 +14,23 @@ And then execute:
 
 Or install it yourself as:
     
-        $ gem install simple_configurable
+    $ gem install pifano_config
 
 ## Usage
 
 ### Creating a configuration file
 
-To create a configuration file, you need to create a class and include the `SimpleConfigurable::Mixin` module.
+To create a configuration file, you need to create a class and include the `PifanoConfig::Mixin` module.
 
 ~~~ruby
 
 class MyAppConfig
-  include SimpleConfigurable::Mixin
+  include Pifano::Mixin
   
   # Define your configuration options here
   config.on(:development) do |config|
     # Define your configuration options for the development environment here
-    config[:my_option] = 'farofa'
+    config[:my_option] = 'pifano dev'
 
     # You can also define nested configurations
     config[:database] = {
@@ -43,7 +41,7 @@ class MyAppConfig
 
   config.on(:production) do |config|
     # Define your configuration options for the production environment here
-    config[:my_option] = 'farofa'
+    config[:my_option] = 'pifano prod'
     
     # You can also define nested configurations
     config[:database] = {
@@ -64,11 +62,13 @@ After creating your configuration class, you can use it to access your configura
 # app/models/my_model.rb
 
 class MyModel
-  def my_method
-    MyApp.config(APP_ENV).database[:adapter]
-    # => 'sqlite3' or 'postgresql' depends on the APP_ENV value
+  def self.adapter
+    MyAppConfig.config.environment(APP_ENV).database[:adapter]
   end
 end
+
+MyModel.adapter
+# => 'sqlite3' or 'postgresql' depends on the APP_ENV value
 ~~~
 
 ### Setting the environment
@@ -79,14 +79,14 @@ You can set the environment using the `APP_ENV` environment variable.
 
 $ APP_ENV=development irb
 
-irb(main):001:0> MyApp.config(APP_ENV).my_option
-=> 'farofa'
+irb(main):001:0> MyApp.config.environment(APP_ENV).my_option
+=> 'pifano dev'
 
-irb(main):002:0> MyApp.config(APP_ENV).database[:adapter]
+irb(main):002:0> MyApp.config.environment(APP_ENV).database[:adapter]
 
 => 'sqlite3'
 ~~~
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/alvarocantadori/simple_configurable.
+Bug reports and pull requests are welcome on GitHub at https://github.com/aristotelesbr/pifano_config.

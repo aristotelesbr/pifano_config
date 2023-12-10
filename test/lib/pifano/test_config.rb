@@ -2,12 +2,12 @@
 
 require 'test_helper'
 
-module Configurable
+module Pifano
   class TestConfig < Minitest::Test
-    include Configurable
+    include Pifano
 
     def setup
-      @config = Configurable::Config.new
+      @config = Pifano::Config.new
     end
 
     def test_on_method

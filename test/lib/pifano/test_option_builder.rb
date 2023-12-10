@@ -2,14 +2,14 @@
 
 require 'test_helper'
 
-module Configurable
+module Pifano
   class TestOptionBuilder < Minitest::Test
     def setup
-      @builder = Configurable::OptionBuilder.new
+      @builder = Pifano::OptionBuilder.new
     end
 
     def test_valid_instance
-      assert_instance_of Configurable::OptionBuilder, @builder
+      assert_instance_of Pifano::OptionBuilder, @builder
       assert_empty(@builder.config_hash)
     end
 
