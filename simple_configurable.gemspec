@@ -16,10 +16,10 @@ Gem::Specification.new do |spec|
     Create a simple easy configuration for your project by enviroment.
   DESC
   
-  spec.homepage = "https://rubygems.org/gems/simple_configurable-#{version}"
+  spec.homepage = "https://rubygems.org/gems/simple_configurable"
   spec.required_ruby_version = '>= 2.6.0'
 
-  spec.metadata['allowed_push_host'] = "https://rubygems.org/gems/simple_configurable-#{version}"
+  spec.metadata['allowed_push_host'] = "https://rubygems.org/gems/simple_configurable"
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/aristotelesbr/simple_configurable'
