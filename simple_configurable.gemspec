@@ -2,21 +2,24 @@
 
 require_relative 'lib/simple_configurable/version'
 
-vertion = SimpleConfigurable::VERSION
+version = SimpleConfigurable::VERSION
 
 Gem::Specification.new do |spec|
   spec.name = 'simple_configurable'
-  spec.version = SimpleConfigurable::VERSION
+  spec.version = version
   spec.authors = ['Aristóteles Coutinho']
   spec.email = ['aristotelesbr@gmail.com']
   spec.license = 'MIT'
 
-  spec.summary = 'Create a simple configuration for your project by enviroment.'
-  spec.description = 'Create a simple configuration for your project by enviroment.'
-  spec.homepage = "https://rubygems.org/gems/simple_configurable-#{vertion}"
+  spec.summary = 'Simple configuration for your project by enviroment.'
+  spec.description = <<-DESC
+    Create a simple easy configuration for your project by enviroment.
+  DESC
+  
+  spec.homepage = "https://rubygems.org/gems/simple_configurable-#{version}"
   spec.required_ruby_version = '>= 2.6.0'
 
-  spec.metadata['allowed_push_host'] = "https://rubygems.org/gems/simple_configurable-#{vertion}"
+  spec.metadata['allowed_push_host'] = "https://rubygems.org/gems/simple_configurable-#{version}"
 
   spec.metadata['homepage_uri'] = spec.homepage
   spec.metadata['source_code_uri'] = 'https://github.com/aristotelesbr/simple_configurable'
