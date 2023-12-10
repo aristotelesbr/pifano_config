@@ -2,6 +2,10 @@
 
 This is a simple configurable gem that allows you to easily create a configuration file for your gem or application.
 
+<p align="center">
+    <img src="examples/pifano_config.jpeg" width="400" height="400" />
+</p>
+
 ## Installation
 
 Add this line to your application's `Gemfile`:
