@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-require 'configurable/option_factory'
+require 'pifano/option_factory'
 
-module Configurable
+module Pifano
   class OptionBuilder
     attr_reader :config_hash
 
