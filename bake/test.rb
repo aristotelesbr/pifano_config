@@ -1,10 +1,13 @@
 # frozen_string_literal: true
 
+# Released under the MIT License.
+# Copyright, 2023, by Aristóteles Coutinho.
+
 require 'open3'
 
-# Exec tests
-
-# Run all tests
+# Run tests.
+#
+# @parameter test [String] the path to file
 def test(test: nil)
 	test_dir = 'test'
 
