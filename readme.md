@@ -6,8 +6,6 @@ This is a simple configurable gem that allows you to easily create a configurati
     <img src="examples/pifano_config.jpeg" width="400" height="400" />
 </p>
 
-[![Development Status](/workflows/Test/badge.svg)](/actions?workflow=Test)
-
 ## Installation
 
 Add this line to your application's `Gemfile`:
