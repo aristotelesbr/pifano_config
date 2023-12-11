@@ -5,8 +5,6 @@ source 'https://rubygems.org'
 # Specify your gem's dependencies in pifano_config.gemspec
 gemspec
 
-	gem  'debug'
-
 group :maintenance, optional: true do
 	# [https://rubygems.org/gems/bake-modernize]
 	# Bake Modernize is a Bake extension that helps you to modernize your
