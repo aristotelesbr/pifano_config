@@ -6,6 +6,10 @@ source 'https://rubygems.org'
 gemspec
 
 group :maintenance, optional: true do
+	# [https://rubygems.org/gems/bake-gem]
+	# Bake Gem is a Bake extension that helps you to create a new Ruby
+	# gem.
+	gem 'bake-gem'
 	# [https://rubygems.org/gems/bake-modernize]
 	# Bake Modernize is a Bake extension that helps you to modernize your
 	# Ruby code.
@@ -21,6 +25,9 @@ group :maintenance, optional: true do
 end
 
 group :test do
+	# [https://rubygems.org/gems/covered]
+	# Covered is a simple code coverage tool for Ruby.
+	gem 'covered', '~> 0.25.1'
 	# [https://rubygems.org/gems/bake]
 	# Bake is a build tool for Ruby projects. It is designed to be simple,
 	# fast and extensible.
