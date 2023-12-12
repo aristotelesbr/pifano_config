@@ -22,19 +22,20 @@ module Pifano
 		# Set the options for a specific environment.
 		#
 		# @parameter env [Symbol] The environment to set the options.
-		# @parameter block [Proc] The block to set the options.
+		# @yields {...} When a block is given, the block is yielded with the
+		# option builder.
 		#
-		# @example
-		#   config.on(:development) do |options|
-		#		 options[:port] = 3000
-		#   end
-		#
-		# @example
 		def on(env)
 			yield @builder if block_given?
 			@options[env] = @builder.build
 		end
 
+		# Get the options for a specific environment.
+		#
+		# @parameter env [Symbol] The environment to get the options.
+		#
+		# @return [Hash] The options.
+		#
 		def environment(env) = @options[env]
 	end
 
@@ -46,14 +47,13 @@ module Pifano
 			klass.extend(ClassMethods)
 		end
 
+		# Extend the class methods.
+		#
 		module ClassMethods
 			# Get the configuration.
 			#
 			# @return [Config] The configuration.
 			#
-			# @example
-			#   config.on(:development) do |options|
-			#		 options[:port] = 3000
 			def config
 				@config ||= Config.new
 			end
