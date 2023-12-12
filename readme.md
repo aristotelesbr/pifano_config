@@ -8,6 +8,10 @@ This is a simple configurable gem that allows you to easily create a configurati
 
 # Usage
 
+Please see the [project documentation](https://rubygems.org/gems/pifano_config) for more details.
+
+  - [Getting Started](https://rubygems.org/gems/pifano_configguides/getting-started/index) - This guide show you how to use the `pífano config`.
+
 ## Contributing
 
 We welcome contributions to this project.
