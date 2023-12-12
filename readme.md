@@ -8,9 +8,9 @@ This is a simple configurable gem that allows you to easily create a configurati
 
 # Usage
 
-Please see the [project documentation](https://rubygems.org/gems/pifano_config) for more details.
+Please see the [project documentation](https://aristotelesbr.github.io/pifano_config/index.html) for more details.
 
-  - [Getting Started](https://rubygems.org/gems/pifano_configguides/getting-started/index) - This guide show you how to use the `pífano config`.
+  - [Getting Started](https://aristotelesbr.github.io/pifano_config/guides/getting-started/index.html) - This guide show you how to use the `pífano config`.
 
 ## Contributing
 
