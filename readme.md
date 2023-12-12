@@ -2,10 +2,7 @@
 
 This is a simple configurable gem that allows you to easily create a configuration file for your gem or application.
 
-[![Test](https://github.com/aristotelesbr/pifano_config/actions/workflows/test.yaml/badge.svg)](https://github.com/aristotelesbr/pifano_config/actions/workflows/test.yaml)
-[![Coverage](https://github.com/aristotelesbr/pifano_config/actions/workflows/coverage.yaml/badge.svg)](https://github.com/aristotelesbr/pifano_config/actions/workflows/coverage.yaml)
-[![Ruby](https://github.com/aristotelesbr/pifano_config/actions/workflows/main.yaml/badge.svg)](https://github.com/aristotelesbr/pifano_config/actions/workflows/main.yaml)
-[![Documentation](https://github.com/aristotelesbr/pifano_config/actions/workflows/documentation.yaml/badge.svg)](https://github.com/aristotelesbr/pifano_config/actions/workflows/documentation.yaml)
+[![Development Status](/workflows/Test/badge.svg)](/actions?workflow=Test)
 
 <p align="center">
     <img src="examples/pifano_config.jpeg" width="400" height="400" />
@@ -15,9 +12,9 @@ This is a simple configurable gem that allows you to easily create a configurati
 
 Please see the [project documentation](https://aristotelesbr.github.io/pifano_config/) for more details.
 
-- Getting Started
-	- [Installation](https://aristotelesbr.github.io/pifano_config/docs/getting-started/index)
-	- [Usage](https://aristotelesbr.github.io/pifano_config/docs/getting-started/index)
+  - Getting Started
+      - [Installation](https://aristotelesbr.github.io/pifano_config/docs/getting-started/index)
+      - [Usage](https://aristotelesbr.github.io/pifano_config/docs/getting-started/index)
 
 ## Contributing
 
