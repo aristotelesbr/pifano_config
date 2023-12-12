@@ -6,9 +6,9 @@ This guide show you how to use the `pífano config`.
 
 Add the gem to your project:
 
-~~~ bash
+```bash
 $ gem add pifano_config
-~~~
+```
 
 ## Usage
 
@@ -16,12 +16,12 @@ $ gem add pifano_config
 
 To create a configuration file, you need to create a class and include the `PifanoConfig::Mixin` module.
 
-~~~ ruby
+```ruby
 require 'pifano_config'
 
 class MyAppConfig
 	include Pifano::Mixin
-	
+
 	# Define your configuration options here
 	config.on(:development) do |config|
 		# Define your configuration options for the development environment here
@@ -37,7 +37,7 @@ class MyAppConfig
 	config.on(:production) do |config|
 		# Define your configuration options for the production environment here
 		config[:my_option] = 'pifano prod'
-		
+
 		# You can also define nested configurations
 		config[:database] = {
 				adapter: 'postgresql',
@@ -47,14 +47,13 @@ class MyAppConfig
 		}
 	end
 end
-~~~
-
+```
 
 ### Using a configuration file
 
 After creating your configuration class, you can use it to access your configuration options.
 
-~~~ ruby
+```ruby
 # app/models/my_model.rb
 
 APP_ENV='production'
@@ -66,21 +65,18 @@ class MyModel
 end
 
 MyModel.important_option # => 'pifano prod'
-~~~
+```
 
 ### Setting the environment
 
 You can set the environment using the `APP_ENV` environment variable.
 
-~~~ bash
-
+```bash
 $ APP_ENV=development irb
 
 irb(main):001:0> MyApp.config.environment(APP_ENV).my_option
 => 'pifano dev'
 
 irb(main):002:0> MyApp.config.environment(APP_ENV).database[:adapter]
-
 => 'sqlite3'
-~~~
-
+```
