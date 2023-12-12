@@ -8,13 +8,7 @@ This is a simple configurable gem that allows you to easily create a configurati
     <img src="examples/pifano_config.jpeg" width="400" height="400" />
 </p>
 
-## Usage
-
 Please see the [project documentation](https://aristotelesbr.github.io/pifano_config/) for more details.
-
-  - Getting Started
-      - [Installation](https://aristotelesbr.github.io/pifano_config/docs/getting-started/index)
-      - [Usage](https://aristotelesbr.github.io/pifano_config/docs/getting-started/index)
 
 ## Contributing
 
