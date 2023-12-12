@@ -2,7 +2,11 @@
 
 This is a simple configurable gem that allows you to easily create a configuration file for your gem or application.
 
-Please see the [project documentation](https://aristotelesbr.github.io/pifano_config/) for more details.
+<p align="center">
+    <img src="pifano_config.jpeg" width="400" height="400" />
+</p>
+
+# Usage
 
 ## Contributing
 
