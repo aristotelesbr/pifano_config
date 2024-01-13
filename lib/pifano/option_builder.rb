@@ -32,7 +32,7 @@ module Pifano
 		#
 		# @parameter config_hash [Hash] The hash to store the options.
 		#
-		# @return [Struct] The options.
+		# @returns [Struct] The options.
 		#
 		def build = OptionFactory.build(@config_hash)
 	end
