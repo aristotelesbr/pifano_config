@@ -28,6 +28,10 @@ group :maintenance, optional: true do
 end
 
 group :test do
+	# [https://rubygems.org/gems/rubocop]
+	# RuboCop is a Ruby code style checking and code formatting tool. It aims to enforce the
+	# community-driven Ruby Style Guide.
+	gem 'rubocop', '~> 1.59'
 	# [https://rubygems.org/gems/covered]
 	# Covered is a simple code coverage tool for Ruby.
 	gem 'covered', '~> 0.25.1'
