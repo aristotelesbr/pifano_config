@@ -34,7 +34,7 @@ module Pifano
 		#
 		# @parameter env [Symbol] The environment to get the options.
 		#
-		# @return [Hash] The options.
+		# @returns [Hash] The options.
 		#
 		def environment(env) = @options[env]
 	end
@@ -52,7 +52,7 @@ module Pifano
 		module ClassMethods
 			# Get the configuration.
 			#
-			# @return [Config] The configuration.
+			# @returns [Config] The configuration.
 			#
 			def config
 				@config ||= Config.new

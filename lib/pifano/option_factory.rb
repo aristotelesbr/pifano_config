@@ -38,7 +38,7 @@ module Pifano
 		# @parameter struct_key [Symbol] The struct key.
 		# @parameter keys [Array] The struct keys.
 		#
-		# @return [Struct] The struct.
+		# @returns [Struct] The struct.
 		#
 		def self.get_or_create_struct(struct_key, keys)
 			@mutex.synchronize do
@@ -53,7 +53,7 @@ module Pifano
 		#
 		# @parameter keys [Array] The struct keys.
 		#
-		# @return [Struct] The struct.
+		# @returns [Struct] The struct.
 		#
 		def self.create_struct(keys)
 			Struct.new(*keys, keyword_init: true) do
