@@ -49,7 +49,7 @@ module Pifano
 
 			@env = env_name
 			if block_given?
-				yield @options[env_name].merge(env: @env)
+				yield @options[env_name].merge(environment: @env)
 				@env = nil
 			else
 				result = @options[env_name]
