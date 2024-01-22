@@ -1,6 +1,6 @@
 # Getting Started
 
-This guide show you how to use the `pífano config`.
+This guide show you how to use the pífano config.
 
 ## Intallation
 
@@ -53,23 +53,13 @@ end
 
 After creating your configuration class, you can use it to access your configuration options.
 
-```ruby
-# app/models/my_model.rb
-
-APP_ENV='production'
-
-class MyModel
-	def self.important_option
-		MyAppConfig.config.environment(APP_ENV).my_option
-	end
-end
-
-MyModel.important_option # => 'pifano prod'
+```rb
+MyAppConfig.config.environment(:development)[:my_option] # => 'pifano dev'
 ```
 
 ### Setting the environment
 
-You can set the environment using the `APP_ENV` environment variable.
+You can set the environment using a environment variable:
 
 ```bash
 $ APP_ENV=development irb
@@ -80,3 +70,5 @@ irb(main):001:0> MyApp.config.environment(APP_ENV).my_option
 irb(main):002:0> MyApp.config.environment(APP_ENV).database[:adapter]
 => 'sqlite3'
 ```
+
+Done! Now you can use the pífano config in your project. :smile:
