@@ -42,15 +42,20 @@ module Pifano
 		# @parameter env_name [Symbol] The environment to get the options.
 		# @yields {...} When a block is given, the block is yielded with the option.
 		#
-		# @returns [Hash] The options.
+		# @returns [Hash] The options if a block is not given.
 		#
 		def environment(env_name)
 			return {} unless @options.key?(env_name)
 
 			@env = env_name
-			yield self if block_given?
-			@env = nil
-			@options[env_name]
+			if block_given?
+				yield @options[env_name]
+				@env = nil
+			else
+				result = @options[env_name]
+				@env = nil
+				result
+			end
 		end
 
 		# Set the option for a specific environment.
